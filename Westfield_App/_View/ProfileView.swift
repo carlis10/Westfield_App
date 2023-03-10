@@ -4,7 +4,6 @@
 //
 //  Created by Apps2M on 14/2/23.
 //
-
 import SwiftUI
 
 struct ProfileView: View {
@@ -133,9 +132,17 @@ struct ProfileView: View {
         .onAppear(){
             DispatchQueue.main.async{
                 SteamNetwork.LoadSteamUser()
+                
             }
+            print()
         }
         
         
     }
+    
+    struct ProfileView_Preview: PreviewProvider {
+        static var previews: some View {
+            ProfileView()
+        }
+}
 }

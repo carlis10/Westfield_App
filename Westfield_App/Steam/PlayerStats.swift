@@ -4,7 +4,6 @@
 //
 //  Created by Apps2M on 7/3/23.
 //
-
 import UIKit
 
 class PlayerStats: ObservableObject, Identifiable {
@@ -34,7 +33,7 @@ class PlayerStats: ObservableObject, Identifiable {
         dollars = _json["dollars"] as? String ?? ""
         
         let unformattedTime: Double = _json["timePlayed"] as? Double ?? 0
-
+        
         timePlayed = DateFormatterManager.FormatDate(_date: unformattedTime)
         
         kills = _json["kills"] as? String ?? ""

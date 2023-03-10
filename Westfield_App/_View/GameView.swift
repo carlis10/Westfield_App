@@ -479,7 +479,6 @@ struct GameView: View {
                 }
             }
             .padding(.top,50)
-            .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
             .toolbar{
                 ToolbarItem(placement:.navigationBarLeading){

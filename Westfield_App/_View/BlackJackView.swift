@@ -52,7 +52,7 @@ struct BlackJackView: View {
                                 .shadow(color: Color.init(red: 0, green: 0, blue: 0, opacity: 0.8), radius: 5, x: 0, y: 3)
                         }
                     }
-                    Spacer(minLength: 50)
+                    //Spacer(minLength: 50)
                 }
             }
         }
