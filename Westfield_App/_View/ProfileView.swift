@@ -49,7 +49,7 @@ struct ProfileView: View {
                         Image("fondo2")
                             .resizable()
                             .frame(width: 250, height: 70)
-                        Text(SteamNetwork.currentUser?.stats?.deaths ?? "0")
+                        Text(SteamNetwork.currentUser?.stats.deaths ?? "")
                             .font(.custom("CowboyMovie", size: 30))
                             .foregroundColor(Color.white)
                     }
@@ -67,7 +67,7 @@ struct ProfileView: View {
                         Image("fondo2")
                             .resizable()
                             .frame(width: 250, height: 70)
-                        Text(SteamNetwork.currentUser?.stats?.kills ?? "0")
+                        Text(SteamNetwork.currentUser?.stats.kills ?? "0")
                             .font(.custom("CowboyMovie", size: 30))
                             .foregroundColor(Color.white)
                     }
@@ -85,7 +85,7 @@ struct ProfileView: View {
                         Image("fondo2")
                             .resizable()
                             .frame(width: 250, height: 70)
-                        Text(SteamNetwork.currentUser?.stats?.kills ?? "0")
+                        Text(SteamNetwork.currentUser?.stats.kills ?? "0")
                             .font(.custom("CowboyMovie", size: 30))
                             .foregroundColor(Color.white)
                     }
@@ -103,7 +103,7 @@ struct ProfileView: View {
                         Image("fondo2")
                             .resizable()
                             .frame(width: 250, height: 70)
-                        Text(SteamNetwork.currentUser?.stats?.timePlayed ?? "0")
+                        Text(SteamNetwork.currentUser?.stats.timePlayed ?? "0")
                             .font(.custom("CowboyMovie", size: 30))
                             .foregroundColor(Color.white)
                     }

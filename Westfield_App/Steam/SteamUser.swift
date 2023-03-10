@@ -18,7 +18,7 @@ class SteamUser: ObservableObject, Identifiable {
     @Published var avatar: String
     @Published var state: String
     
-    @Published var stats: PlayerStats? = nil
+    @Published var stats: PlayerStats
 
     init(_json: [String: Any]){
         userName = _json["userName"] as? String ?? ""
@@ -36,17 +36,18 @@ class SteamUser: ObservableObject, Identifiable {
         } else{
             state = "online"
         }
-        
-        stats = LoadStats()
+        let _json = NetworkRequestService.DoGet(_url: URL(string: SteamNetwork.statsURL + "/" + (SteamNetwork.steamID ?? ""))!)
+        print(_json[0])
+        stats = PlayerStats(_json: _json[0])
         
         
     }
     
-    func LoadStats() -> PlayerStats{
+    func LoadStats(){
         
         let _json = NetworkRequestService.DoGet(_url: URL(string: SteamNetwork.statsURL + "/" + (SteamNetwork.steamID ?? ""))!)
         print(_json[0])
-        return PlayerStats(_json: _json[0])
+        stats = PlayerStats(_json: _json[0])
         
     }
         
