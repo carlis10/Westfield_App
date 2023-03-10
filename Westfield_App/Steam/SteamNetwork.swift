@@ -188,8 +188,6 @@ class SteamNetwork: NSObject {
         
         currentUser = SteamUser(_json: _json[0])
         
-        print("Current user:", currentUser as Any)
-        
         currentUser?.ShowInfo()
         
     }
