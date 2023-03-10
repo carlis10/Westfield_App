@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		013A3BAA97F8CCD7B6220D12 /* Pods_Westfield_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A594416903C9B0D333448C /* Pods_Westfield_App.framework */; };
+		0738A54229BB9402002A2B9D /* DateFormatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738A54129BB9402002A2B9D /* DateFormatterManager.swift */; };
+		0D08E43A29A3A9A500626E91 /* SteamUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D08E43929A3A9A500626E91 /* SteamUser.swift */; };
+		0D15052E29B218C600515831 /* WinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15052D29B218C600515831 /* WinnerView.swift */; };
+		0D15053029B21A8100515831 /* LoserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15052F29B21A8100515831 /* LoserView.swift */; };
+		0D50E8A8299B9BFE009FD0FC /* Westfield_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8A7299B9BFE009FD0FC /* Westfield_AppApp.swift */; };
+		0D50E8B5299B9D39009FD0FC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8AA299B9D38009FD0FC /* LoginView.swift */; };
+		0D50E8B6299B9D39009FD0FC /* CellInventoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8AB299B9D38009FD0FC /* CellInventoryListView.swift */; };
+		0D50E8B7299B9D39009FD0FC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8AC299B9D38009FD0FC /* ProfileView.swift */; };
+		0D50E8B8299B9D39009FD0FC /* SinginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8AD299B9D39009FD0FC /* SinginView.swift */; };
+		0D50E8B9299B9D39009FD0FC /* CellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8AE299B9D39009FD0FC /* CellListView.swift */; };
+		0D50E8BA299B9D39009FD0FC /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8AF299B9D39009FD0FC /* InventoryView.swift */; };
+		0D50E8BB299B9D39009FD0FC /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8B0299B9D39009FD0FC /* FriendsView.swift */; };
+		0D50E8BC299B9D39009FD0FC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8B1299B9D39009FD0FC /* HomeView.swift */; };
+		0D50E8BD299B9D39009FD0FC /* PruebaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8B2299B9D39009FD0FC /* PruebaView.swift */; };
+		0D50E8BE299B9D39009FD0FC /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8B3299B9D39009FD0FC /* NavigationBarView.swift */; };
+		0D50E8BF299B9D39009FD0FC /* FriendsCellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8B4299B9D39009FD0FC /* FriendsCellListView.swift */; };
+		0D50E8C5299B9D95009FD0FC /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8C1299B9D95009FD0FC /* ColorExtension.swift */; };
+		0D50E8C6299B9D95009FD0FC /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8C2299B9D95009FD0FC /* New.swift */; };
+		0D50E8C7299B9D96009FD0FC /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8C3299B9D95009FD0FC /* Friend.swift */; };
+		0D50E8C8299B9D96009FD0FC /* InventoryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50E8C4299B9D95009FD0FC /* InventoryItems.swift */; };
+		0D591F38299E3F71004111BA /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D591F37299E3F71004111BA /* NewView.swift */; };
+		0D6450E629A3752000E61A9F /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 0D6450E529A3752000E61A9F /* AlertToast */; };
+		0D6450E829A38D6300E61A9F /* StrokeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6450E729A38D6300E61A9F /* StrokeText.swift */; };
+		0D65BE2C29B89813003F7466 /* PlayerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D65BE2B29B89813003F7466 /* PlayerStats.swift */; };
+		0D6F0F7D29B09BD10040AAF8 /* redondear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6F0F7C29B09BD10040AAF8 /* redondear.swift */; };
+		0D6F0F7F29B0B1EF0040AAF8 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6F0F7E29B0B1EF0040AAF8 /* Card.swift */; };
+		0D817418299CFCE4007C2215 /* Cowboy Movie.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D817417299CFCE4007C2215 /* Cowboy Movie.ttf */; };
+		0DB1984C2996577000F0F88D /* SteamNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB1984B2996577000F0F88D /* SteamNetwork.swift */; };
+		0DB1984E2996577900F0F88D /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB1984D2996577900F0F88D /* ErrorType.swift */; };
+		0DB198502996577E00F0F88D /* NetworkRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB1984F2996577E00F0F88D /* NetworkRequestService.swift */; };
+		0DB198522996578F00F0F88D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB198512996578F00F0F88D /* Error.swift */; };
+		0DE209EF29A6116B00F4F190 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE209EE29A6116B00F4F190 /* GameView.swift */; };
+		0DE209F129A6124D00F4F190 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE209F029A6124D00F4F190 /* CardView.swift */; };
+		0DE6DC4C299FA932009899EA /* BlackJackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6DC4B299FA932009899EA /* BlackJackView.swift */; };
+		0DF0D3F029951EB800C3A9E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DF0D3EF29951EB800C3A9E8 /* Assets.xcassets */; };
+		0DF0D3F329951EB800C3A9E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DF0D3F229951EB800C3A9E8 /* Preview Assets.xcassets */; };
+		0DF50A6C29B5E23100361069 /* CreateNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF50A6B29B5E23100361069 /* CreateNewView.swift */; };
+		0DF50A6E29B5E47600361069 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF50A6D29B5E47600361069 /* ImagePicker.swift */; };
+		0DF70B9629BB561400C76768 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF70B9529BB561400C76768 /* DataManager.swift */; };
+		0DFE464229A4BB8D00A25946 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFE464129A4BB8D00A25946 /* SplashView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0738A54129BB9402002A2B9D /* DateFormatterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterManager.swift; sourceTree = "<group>"; };
+		0D08E43929A3A9A500626E91 /* SteamUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamUser.swift; sourceTree = "<group>"; };
+		0D15052D29B218C600515831 /* WinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerView.swift; sourceTree = "<group>"; };
+		0D15052F29B21A8100515831 /* LoserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoserView.swift; sourceTree = "<group>"; };
+		0D50E8A7299B9BFE009FD0FC /* Westfield_AppApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Westfield_AppApp.swift; sourceTree = "<group>"; };
+		0D50E8AA299B9D38009FD0FC /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Westfield_App/_View/LoginView.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8AB299B9D38009FD0FC /* CellInventoryListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellInventoryListView.swift; path = Westfield_App/_View/CellInventoryListView.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8AC299B9D38009FD0FC /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = Westfield_App/_View/ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8AD299B9D39009FD0FC /* SinginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SinginView.swift; path = Westfield_App/_View/SinginView.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8AE299B9D39009FD0FC /* CellListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellListView.swift; path = Westfield_App/_View/CellListView.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8AF299B9D39009FD0FC /* InventoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InventoryView.swift; path = Westfield_App/_View/InventoryView.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8B0299B9D39009FD0FC /* FriendsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendsView.swift; path = Westfield_App/_View/FriendsView.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8B1299B9D39009FD0FC /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Westfield_App/_View/HomeView.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8B2299B9D39009FD0FC /* PruebaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PruebaView.swift; path = Westfield_App/_View/PruebaView.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8B3299B9D39009FD0FC /* NavigationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationBarView.swift; path = Westfield_App/_View/NavigationBarView.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8B4299B9D39009FD0FC /* FriendsCellListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendsCellListView.swift; path = Westfield_App/_View/FriendsCellListView.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8C1299B9D95009FD0FC /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorExtension.swift; path = Westfield_App/_Model/ColorExtension.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8C2299B9D95009FD0FC /* New.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = New.swift; path = Westfield_App/_Model/New.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8C3299B9D95009FD0FC /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Friend.swift; path = Westfield_App/Steam/Friend.swift; sourceTree = SOURCE_ROOT; };
+		0D50E8C4299B9D95009FD0FC /* InventoryItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InventoryItems.swift; path = Westfield_App/_Model/InventoryItems.swift; sourceTree = SOURCE_ROOT; };
+		0D591F37299E3F71004111BA /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		0D6450E729A38D6300E61A9F /* StrokeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeText.swift; sourceTree = "<group>"; };
+		0D65BE2B29B89813003F7466 /* PlayerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
+		0D6F0F7C29B09BD10040AAF8 /* redondear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redondear.swift; sourceTree = "<group>"; };
+		0D6F0F7E29B0B1EF0040AAF8 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0D817417299CFCE4007C2215 /* Cowboy Movie.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cowboy Movie.ttf"; sourceTree = "<group>"; };
+		0D817419299D003E007C2215 /* Westfield-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Westfield-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0DB1984B2996577000F0F88D /* SteamNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteamNetwork.swift; sourceTree = "<group>"; };
+		0DB1984D2996577900F0F88D /* ErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorType.swift; path = ../NetworkService/ErrorType.swift; sourceTree = "<group>"; };
+		0DB1984F2996577E00F0F88D /* NetworkRequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRequestService.swift; path = ../NetworkService/NetworkRequestService.swift; sourceTree = "<group>"; };
+		0DB198512996578F00F0F88D /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		0DE209EE29A6116B00F4F190 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		0DE209F029A6124D00F4F190 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0DE6DC4B299FA932009899EA /* BlackJackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackJackView.swift; sourceTree = "<group>"; };
+		0DF0D3E829951EB600C3A9E8 /* Westfield_App.xcodeproj */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Westfield_App.xcodeproj; path = Westfield_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DF0D3EF29951EB800C3A9E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DF0D3F229951EB800C3A9E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0DF50A6B29B5E23100361069 /* CreateNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewView.swift; sourceTree = "<group>"; };
+		0DF50A6D29B5E47600361069 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0DF70B9529BB561400C76768 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0DFE464129A4BB8D00A25946 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		12A229B96EEF705E13B7CFF9 /* Pods-Westfield_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Westfield_App.release.xcconfig"; path = "Target Support Files/Pods-Westfield_App/Pods-Westfield_App.release.xcconfig"; sourceTree = "<group>"; };
+		46A594416903C9B0D333448C /* Pods_Westfield_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Westfield_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8806A5DF7848816CC94A7BBA /* Pods-Westfield_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Westfield_App.debug.xcconfig"; path = "Target Support Files/Pods-Westfield_App/Pods-Westfield_App.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DF0D3E529951EB600C3A9E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013A3BAA97F8CCD7B6220D12 /* Pods_Westfield_App.framework in Frameworks */,
+				0D6450E629A3752000E61A9F /* AlertToast in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D50E8A9299B9D24009FD0FC /* _View */ = {
+			isa = PBXGroup;
+			children = (
+				0D50E8AB299B9D38009FD0FC /* CellInventoryListView.swift */,
+				0D50E8AE299B9D39009FD0FC /* CellListView.swift */,
+				0D50E8B4299B9D39009FD0FC /* FriendsCellListView.swift */,
+				0D50E8B0299B9D39009FD0FC /* FriendsView.swift */,
+				0D50E8B1299B9D39009FD0FC /* HomeView.swift */,
+				0D50E8AF299B9D39009FD0FC /* InventoryView.swift */,
+				0D50E8AA299B9D38009FD0FC /* LoginView.swift */,
+				0D50E8B3299B9D39009FD0FC /* NavigationBarView.swift */,
+				0D50E8AC299B9D38009FD0FC /* ProfileView.swift */,
+				0D50E8B2299B9D39009FD0FC /* PruebaView.swift */,
+				0D50E8AD299B9D39009FD0FC /* SinginView.swift */,
+				0D591F37299E3F71004111BA /* NewView.swift */,
+				0DE6DC4B299FA932009899EA /* BlackJackView.swift */,
+				0DFE464129A4BB8D00A25946 /* SplashView.swift */,
+				0DE209EE29A6116B00F4F190 /* GameView.swift */,
+				0DE209F029A6124D00F4F190 /* CardView.swift */,
+				0D15052D29B218C600515831 /* WinnerView.swift */,
+				0D15052F29B21A8100515831 /* LoserView.swift */,
+				0DF50A6B29B5E23100361069 /* CreateNewView.swift */,
+			);
+			path = _View;
+			sourceTree = "<group>";
+		};
+		0D50E8C0299B9D87009FD0FC /* _Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D50E8C4299B9D95009FD0FC /* InventoryItems.swift */,
+				0D50E8C1299B9D95009FD0FC /* ColorExtension.swift */,
+				0D50E8C2299B9D95009FD0FC /* New.swift */,
+				0D6450E729A38D6300E61A9F /* StrokeText.swift */,
+				0D6F0F7C29B09BD10040AAF8 /* redondear.swift */,
+				0D6F0F7E29B0B1EF0040AAF8 /* Card.swift */,
+				0DF50A6D29B5E47600361069 /* ImagePicker.swift */,
+				0DF70B9529BB561400C76768 /* DataManager.swift */,
+				0738A54129BB9402002A2B9D /* DateFormatterManager.swift */,
+			);
+			path = _Model;
+			sourceTree = "<group>";
+		};
+		0D817416299CFCC6007C2215 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0D817417299CFCE4007C2215 /* Cowboy Movie.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0DB198492996575200F0F88D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0DB1984F2996577E00F0F88D /* NetworkRequestService.swift */,
+				0DB1984D2996577900F0F88D /* ErrorType.swift */,
+				0DB198512996578F00F0F88D /* Error.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0DB1984A2996575C00F0F88D /* Steam */ = {
+			isa = PBXGroup;
+			children = (
+				0DB1984B2996577000F0F88D /* SteamNetwork.swift */,
+				0D50E8C3299B9D95009FD0FC /* Friend.swift */,
+				0D08E43929A3A9A500626E91 /* SteamUser.swift */,
+				0D65BE2B29B89813003F7466 /* PlayerStats.swift */,
+			);
+			path = Steam;
+			sourceTree = "<group>";
+		};
+		0DF0D3DF29951EB600C3A9E8 = {
+			isa = PBXGroup;
+			children = (
+				0DF0D3EA29951EB600C3A9E8 /* Westfield_App */,
+				0DF0D3E929951EB600C3A9E8 /* Products */,
+				41C08F0C02CF9BD2A638D40D /* Pods */,
+				EE6A1E2E12C7C9EE622EEFCE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0DF0D3E929951EB600C3A9E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DF0D3E829951EB600C3A9E8 /* Westfield_App.xcodeproj */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DF0D3EA29951EB600C3A9E8 /* Westfield_App */ = {
+			isa = PBXGroup;
+			children = (
+				0D817419299D003E007C2215 /* Westfield-App-Info.plist */,
+				0D817416299CFCC6007C2215 /* Fonts */,
+				0D50E8C0299B9D87009FD0FC /* _Model */,
+				0D50E8A9299B9D24009FD0FC /* _View */,
+				0D50E8A7299B9BFE009FD0FC /* Westfield_AppApp.swift */,
+				0DB1984A2996575C00F0F88D /* Steam */,
+				0DB198492996575200F0F88D /* Networking */,
+				0DF0D3EF29951EB800C3A9E8 /* Assets.xcassets */,
+				0DF0D3F129951EB800C3A9E8 /* Preview Content */,
+			);
+			path = Westfield_App;
+			sourceTree = "<group>";
+		};
+		0DF0D3F129951EB800C3A9E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0DF0D3F229951EB800C3A9E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41C08F0C02CF9BD2A638D40D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8806A5DF7848816CC94A7BBA /* Pods-Westfield_App.debug.xcconfig */,
+				12A229B96EEF705E13B7CFF9 /* Pods-Westfield_App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE6A1E2E12C7C9EE622EEFCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46A594416903C9B0D333448C /* Pods_Westfield_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DF0D3E729951EB600C3A9E8 /* Westfield_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DF0D3F629951EB800C3A9E8 /* Build configuration list for PBXNativeTarget "Westfield_App" */;
+			buildPhases = (
+				208357F580778D186C014E70 /* [CP] Check Pods Manifest.lock */,
+				0DF0D3E429951EB600C3A9E8 /* Sources */,
+				0DF0D3E529951EB600C3A9E8 /* Frameworks */,
+				0DF0D3E629951EB600C3A9E8 /* Resources */,
+				88CF5ADEBC2CC5565838F6EF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Westfield_App;
+			packageProductDependencies = (
+				0D6450E529A3752000E61A9F /* AlertToast */,
+			);
+			productName = Westfield_App;
+			productReference = 0DF0D3E829951EB600C3A9E8 /* Westfield_App.xcodeproj */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DF0D3E029951EB600C3A9E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					0DF0D3E729951EB600C3A9E8 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 0DF0D3E329951EB600C3A9E8 /* Build configuration list for PBXProject "Westfield_App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0DF0D3DF29951EB600C3A9E8;
+			packageReferences = (
+				0D6450E429A3751F00E61A9F /* XCRemoteSwiftPackageReference "AlertToast" */,
+				0DE209F229A615A500F4F190 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
+			productRefGroup = 0DF0D3E929951EB600C3A9E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DF0D3E729951EB600C3A9E8 /* Westfield_App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DF0D3E629951EB600C3A9E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D817418299CFCE4007C2215 /* Cowboy Movie.ttf in Resources */,
+				0DF0D3F329951EB800C3A9E8 /* Preview Assets.xcassets in Resources */,
+				0DF0D3F029951EB800C3A9E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		208357F580778D186C014E70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Westfield_App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88CF5ADEBC2CC5565838F6EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Westfield_App/Pods-Westfield_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Westfield_App/Pods-Westfield_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Westfield_App/Pods-Westfield_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DF0D3E429951EB600C3A9E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6450E829A38D6300E61A9F /* StrokeText.swift in Sources */,
+				0DE209F129A6124D00F4F190 /* CardView.swift in Sources */,
+				0D50E8C7299B9D96009FD0FC /* Friend.swift in Sources */,
+				0D50E8B8299B9D39009FD0FC /* SinginView.swift in Sources */,
+				0D08E43A29A3A9A500626E91 /* SteamUser.swift in Sources */,
+				0D50E8BA299B9D39009FD0FC /* InventoryView.swift in Sources */,
+				0D50E8BC299B9D39009FD0FC /* HomeView.swift in Sources */,
+				0DF50A6C29B5E23100361069 /* CreateNewView.swift in Sources */,
+				0D50E8B7299B9D39009FD0FC /* ProfileView.swift in Sources */,
+				0D50E8B9299B9D39009FD0FC /* CellListView.swift in Sources */,
+				0738A54229BB9402002A2B9D /* DateFormatterManager.swift in Sources */,
+				0D50E8BD299B9D39009FD0FC /* PruebaView.swift in Sources */,
+				0DE6DC4C299FA932009899EA /* BlackJackView.swift in Sources */,
+				0D50E8C5299B9D95009FD0FC /* ColorExtension.swift in Sources */,
+				0D50E8BF299B9D39009FD0FC /* FriendsCellListView.swift in Sources */,
+				0D65BE2C29B89813003F7466 /* PlayerStats.swift in Sources */,
+				0D50E8B6299B9D39009FD0FC /* CellInventoryListView.swift in Sources */,
+				0D6F0F7D29B09BD10040AAF8 /* redondear.swift in Sources */,
+				0D50E8B5299B9D39009FD0FC /* LoginView.swift in Sources */,
+				0D50E8BB299B9D39009FD0FC /* FriendsView.swift in Sources */,
+				0DF50A6E29B5E47600361069 /* ImagePicker.swift in Sources */,
+				0DB1984E2996577900F0F88D /* ErrorType.swift in Sources */,
+				0D50E8A8299B9BFE009FD0FC /* Westfield_AppApp.swift in Sources */,
+				0DB1984C2996577000F0F88D /* SteamNetwork.swift in Sources */,
+				0DFE464229A4BB8D00A25946 /* SplashView.swift in Sources */,
+				0DB198502996577E00F0F88D /* NetworkRequestService.swift in Sources */,
+				0DB198522996578F00F0F88D /* Error.swift in Sources */,
+				0D6F0F7F29B0B1EF0040AAF8 /* Card.swift in Sources */,
+				0D50E8C6299B9D95009FD0FC /* New.swift in Sources */,
+				0D15053029B21A8100515831 /* LoserView.swift in Sources */,
+				0D15052E29B218C600515831 /* WinnerView.swift in Sources */,
+				0D591F38299E3F71004111BA /* NewView.swift in Sources */,
+				0DF70B9629BB561400C76768 /* DataManager.swift in Sources */,
+				0D50E8BE299B9D39009FD0FC /* NavigationBarView.swift in Sources */,
+				0DE209EF29A6116B00F4F190 /* GameView.swift in Sources */,
+				0D50E8C8299B9D96009FD0FC /* InventoryItems.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0DF0D3F429951EB800C3A9E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0DF0D3F529951EB800C3A9E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0DF0D3F729951EB800C3A9E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8806A5DF7848816CC94A7BBA /* Pods-Westfield_App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Westfield_App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Westfield-App-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "apps2m.Westfield-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0DF0D3F829951EB800C3A9E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12A229B96EEF705E13B7CFF9 /* Pods-Westfield_App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Westfield_App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Westfield-App-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "apps2m.Westfield-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DF0D3E329951EB600C3A9E8 /* Build configuration list for PBXProject "Westfield_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DF0D3F429951EB800C3A9E8 /* Debug */,
+				0DF0D3F529951EB800C3A9E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DF0D3F629951EB800C3A9E8 /* Build configuration list for PBXNativeTarget "Westfield_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DF0D3F729951EB800C3A9E8 /* Debug */,
+				0DF0D3F829951EB800C3A9E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D6450E429A3751F00E61A9F /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		0DE209F229A615A500F4F190 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D6450E529A3752000E61A9F /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D6450E429A3751F00E61A9F /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0DF0D3E029951EB600C3A9E8 /* Project object */;
+}
