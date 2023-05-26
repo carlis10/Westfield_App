@@ -15,6 +15,7 @@ struct LoginView: View {
     @State var remember:Bool = false
     @State var authCode:String = ""
     @State var authCodeDescription:String = ""
+    @State var codeType: String = ""
     @State var access:Bool = false
     
     @State private var disabledInput = false
@@ -23,11 +24,9 @@ struct LoginView: View {
     @State private var showLoading = false
     
     
-    func OnPressedSendAuth(){
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4)) {
+    public func OnPressedSendAuth(){
+        
             if SteamNetwork.errorOcurred == ErrorType.unexpected{
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
                     
                     showLoading = false
                     disabledInput = false
@@ -38,7 +37,7 @@ struct LoginView: View {
                         
                         showToast = true
                         
-                    }}
+                    }
                 
             } else{
                 
@@ -54,19 +53,12 @@ struct LoginView: View {
                     
                     showToast = true
                 }
-                
-                
-                
             }
-        }
     }
     
-    func OnPressedLogin(){
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4)) {
+    public func OnPressedLogin(){
             
             if SteamNetwork.errorOcurred == ErrorType.unexpected{
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
                     
                     showLoading = false
                     disabledInput = false
@@ -90,7 +82,7 @@ struct LoginView: View {
                             showPopover = false
                         }
                         
-                    }}
+                    }
                 
             } else{
                 
@@ -121,7 +113,7 @@ struct LoginView: View {
                 
             }
             
-        }
+        
     }
     
     var body: some View {
@@ -188,9 +180,9 @@ struct LoginView: View {
                         Task {
                             showLoading = true
                             
-                            await SteamNetwork.SteamLogin(_userName: userName, _pass: pass)
+                            await SteamNetwork.SteamLogin(_userName: userName, _pass: pass,completion: {OnPressedLogin()})
                             
-                            OnPressedLogin()
+//                            OnPressedLogin()
                             
                         }
                         
@@ -270,17 +262,17 @@ struct LoginView: View {
                                 
                                 showLoading = true
                                 
-                                var codeType: String = ""
-                                
-                                if SteamNetwork.errorOcurred.error == "needEmail"{
-                                    codeType = "email"
-                                } else if SteamNetwork.errorOcurred.error == "need2fa"{
-                                    codeType = "2fa"
+                                if codeType != "email" && codeType != "2fa"{
+                                    if SteamNetwork.errorOcurred.error == "needEmail"{
+                                        codeType = "email"
+                                    } else if SteamNetwork.errorOcurred.error == "need2fa"{
+                                        codeType = "2fa"
+                                    }
+                                    
                                 }
+                                await SteamNetwork.SendAuthCode(_codeType: codeType, _userName: userName, _pass: pass, _authCode: authCode,completion: {OnPressedSendAuth()})
                                 
-                                await SteamNetwork.SendAuthCode(_codeType: codeType, _userName: userName, _pass: pass, _authCode: authCode)
-                                
-                                OnPressedSendAuth()
+//                                OnPressedSendAuth()
                                 
                             }
                         }){
@@ -320,6 +312,9 @@ struct LoginView: View {
             AlertToast(displayMode: .alert,type:.loading)
         }.navigationBarBackButtonHidden(true)
             .navigationBarTitleDisplayMode(.inline)
+            .onAppear(){
+                disabledInput = false
+            }
     }
     
 }

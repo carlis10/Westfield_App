@@ -47,7 +47,7 @@ struct CreateNewView: View {
                         .padding()
                 }.padding()
                 TextEditor(text: $bodyNew)
-                    .foregroundColor(Color.init(hex: "EEEEEE"))
+                    .foregroundColor(Color.init(hex: "111111"))
                     .background(Color.init(hex: "111111"))
                     .padding()
                 

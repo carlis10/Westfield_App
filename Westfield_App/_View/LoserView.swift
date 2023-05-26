@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LoserView: View {
     @Binding var next: Bool
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         
         GeometryReader{ g in
@@ -30,7 +31,8 @@ struct LoserView: View {
             
         }.onAppear(){
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
-                self.next = false
+                next = false
+                dismiss()
             }
         }.navigationBarBackButtonHidden(true)
             .navigationBarTitleDisplayMode(.inline)

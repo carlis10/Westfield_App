@@ -29,7 +29,7 @@ class NetworkRequestService: NSObject {
     
     static var webResponse: [String: Any] = [:]
     
-    static func DoPost(_paramsDic: [String: Any], _url: URL) async {
+    static func DoPost(_paramsDic: [String: Any], _url: URL,completion:@escaping () -> Void) async {
         
         webResponse = [:]
         
@@ -56,10 +56,10 @@ class NetworkRequestService: NSObject {
           
         
         
-        await SendRequest(userParams: _userParams, userParamsAuth: _userParamsAuth, _url: _url, auth: isAuth)
+        await SendRequest(userParams: _userParams, userParamsAuth: _userParamsAuth, _url: _url, auth: isAuth,completion: completion)
     }
     
-    static func SendRequest(userParams: UserParams, userParamsAuth: UserParamsAuth, _url: URL, auth: Bool) async{
+    static func SendRequest(userParams: UserParams, userParamsAuth: UserParamsAuth, _url: URL, auth: Bool,completion:@escaping () -> Void) async{
         
         var tempJson: [String:Any] = [:]
         
@@ -88,7 +88,7 @@ class NetworkRequestService: NSObject {
                 webResponse = tempJson
                 
                 print("TEMP JSON:", webResponse["errorType"] ?? "error type not finded")
-                
+                completion()
             
             }
         } else{
@@ -98,9 +98,8 @@ class NetworkRequestService: NSObject {
                            parameters: userParams,
                            encoder: JSONParameterEncoder.default).response { response in
                     
-                    
                     var data = response.data
-                    
+                  
                     do {
                         data = try Data(contentsOf: _url)
                     } catch {
@@ -130,7 +129,9 @@ class NetworkRequestService: NSObject {
                     webResponse = tempJson
                     
                     print("TEMP JSON:", webResponse["errorType"] ?? "error type not finded")
-                    
+//                  DispatchQueue.main.async {
+                      completion()
+//                  }
                 }
                 
             }

@@ -75,7 +75,7 @@ struct GameView: View {
             cartasFisicasIA.append(card)
         }
         inGame = false
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.001) { [self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) { [self] in
           hide = false
         }
     }
@@ -478,7 +478,7 @@ struct GameView: View {
                     Text("")
                 }
             }
-            .padding(.top,50)
+            .padding(.top,10)
             .navigationBarBackButtonHidden(true)
             .toolbar{
                 ToolbarItem(placement:.navigationBarLeading){

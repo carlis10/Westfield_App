@@ -38,7 +38,7 @@ struct InventoryView: View {
                         .resizable()
                         .frame(width: g.size.width * 0.95, height: 20)
                     ScrollView(showsIndicators: false){
-                        Text("PRIMARIA")
+                        Text("PRIMARY")
                             .font(.custom("CowboyMovie", size: 50))
                         ScrollView(.horizontal,showsIndicators: false){
                             HStack(spacing:20){
@@ -51,7 +51,7 @@ struct InventoryView: View {
                                 }
                             }
                         }.padding()
-                        Text("SECUNDARIA")
+                        Text("SECONDARY")
                             .font(.custom("CowboyMovie", size: 50))
                         ScrollView(.horizontal,showsIndicators: false){
                             HStack(spacing:20){

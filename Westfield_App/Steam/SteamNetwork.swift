@@ -48,40 +48,38 @@ class SteamNetwork: NSObject {
     
     static var steamID: String? = nil
     
-    static func SteamLogin(_userName: String, _pass: String) async{
+    static func SteamLogin(_userName: String, _pass: String,completion: @escaping () -> Void) async{
         
         let userParams: [String:Any] = [
             "userName": _userName,
             "pass": _pass
         ]
         
-        await NetworkRequestService.DoPost(_paramsDic: userParams, _url: URL(string: loginURL)!)
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4)) {
+        await NetworkRequestService.DoPost(_paramsDic: userParams, _url: URL(string: loginURL)!){
             
-            var responseRecived: Bool = false
+            //            var responseRecived: Bool = false
+            //
+            //            responseRecived = NetworkRequestService.webResponse as! [String:String] != [:]
+            //            if responseRecived {
             
-            responseRecived = NetworkRequestService.webResponse as! [String:String] != [:]
+            if NetworkRequestService.webResponse["steamID"] != nil{
+                steamID = NetworkRequestService.webResponse["steamID"] as? String
+            }
             
-            if responseRecived {
-                
-                if NetworkRequestService.webResponse["steamID"] != nil{
-                    steamID = NetworkRequestService.webResponse["steamID"] as? String
-                }
-                
-                CheckForError(_json: NetworkRequestService.webResponse as? [String:String] ?? ["errorType":ErrorType.unexpected.error])
-                
-            } else{
-                
-                CheckForError(_json: ["errorType":ErrorType.timeOut.error])
-                
-            }}
+            CheckForError(_json: NetworkRequestService.webResponse as? [String:String] ?? ["errorType":ErrorType.unexpected.error])
+            completion()
+        }
+//            } else{
+//
+//                CheckForError(_json: ["errorType":ErrorType.timeOut.error])
+//
+//            }
         
         
     }
     
     
-    static func SendAuthCode(_codeType: String, _userName: String, _pass: String, _authCode: String) async{
+    static func SendAuthCode(_codeType: String, _userName: String, _pass: String, _authCode: String,completion: @escaping  () -> Void) async{
         
         let userParams: [String:Any] = [
             "codeType": _codeType,
@@ -92,29 +90,30 @@ class SteamNetwork: NSObject {
         
         print("SendAuthCode: ", userParams)
         
-        await NetworkRequestService.DoPost(_paramsDic: userParams, _url: URL(string: authURL)!)
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4)) {
+        await NetworkRequestService.DoPost(_paramsDic: userParams, _url: URL(string: authURL)!){
             
-            var responseRecived: Bool = false
             
-            responseRecived = NetworkRequestService.webResponse as! [String:String] != [:]
+            //            var responseRecived: Bool = false
+            //
+            //            responseRecived = NetworkRequestService.webResponse as! [String:String] != [:]
+            //
+            //            if responseRecived {
             
-            if responseRecived {
-                
-                if NetworkRequestService.webResponse["steamID"] != nil{
-                    steamID = NetworkRequestService.webResponse["steamID"] as? String
-                }
-                
-                CheckForError(_json: NetworkRequestService.webResponse as? [String:String] ?? ["errorType":ErrorType.unexpected.error])
-                
-            } else{
-                
-                CheckForError(_json: ["errorType":ErrorType.timeOut.error])
-                
+            if NetworkRequestService.webResponse["steamID"] != nil{
+                steamID = NetworkRequestService.webResponse["steamID"] as? String
             }
             
+            CheckForError(_json: NetworkRequestService.webResponse as? [String:String] ?? ["errorType":ErrorType.unexpected.error])
+            completion()
         }
+//
+//            } else{
+//
+//                CheckForError(_json: ["errorType":ErrorType.timeOut.error])
+//
+//            }
+            
+        
         
     }
     
